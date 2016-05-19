@@ -2,7 +2,7 @@
 #define BUILDING_NODE_EXTENSION
 #endif  // BUILDING_NODE_EXTENSION
 
-#if _MSC_VER
+#if _MSC_VER && _MSC_VER < 1900
 #define snprintf _snprintf
 #endif
 
@@ -87,7 +87,7 @@ struct convert_im_ctx : im_ctx_base {
     std::string format;
     std::string filter;
     std::string blur;
-	std::string background;
+    std::string background;
     unsigned int quality;
     int rotate;
     int density;
