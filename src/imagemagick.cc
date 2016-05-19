@@ -87,7 +87,7 @@ struct convert_im_ctx : im_ctx_base {
     std::string format;
     std::string filter;
     std::string blur;
-	std::string background;
+    std::string background;
     unsigned int quality;
     int rotate;
     int density;
